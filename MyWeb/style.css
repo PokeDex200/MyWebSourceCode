@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body{
+    background: linear-gradient(#3af, #55e, #11f) no-repeat;
+    min-height: 260vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10em;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    padding: 1em;
+    list-style-type: none;
+}
+
+nav ul li a{
+    transition: all 0.4s;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #09aeeb;
+}
+
+.active a{
+    background-color: #fff;
+    color: #09aeeb;
+}
+
+#logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0.3em 1em;
+}
+
+.hidden{
+    margin: 0 auto;
+    max-width: fit-content;
+    font-weight: 900;
+    transition: all 0.5s;
+    transform: translateX(-500%);
+    filter: blur(25px);
+    opacity: 0;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 60vh;
+    border: solid 5px #fff;
+    border-radius: 1em;
+    background: linear-gradient(#11f, #55e, #3af);
+    padding: 0.5em;
+    max-width: 75vw;
+}
+
+.text1{
+    padding: 0.5em;
+    margin: 0 auto;
+    max-width: 75vw;
+    border: solid 5px #fff;
+    border-radius: 1em;
+    background: linear-gradient(#11f, #55e, #3af);
+    font-weight: 900;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 60vh;
+}
+
+.hidden:last-child{
+    margin-bottom: 60vh;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+}
+
+#info{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
